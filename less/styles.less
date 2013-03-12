@@ -8,7 +8,7 @@ body {
 /* Custom container */
 .container {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 960px;
 }
 .container > hr {
   margin: 30px 0;
@@ -26,9 +26,25 @@ body {
   display: inline-block; /* required for webkit browsers */
 }
 .hero-unit {
-  background-image: url(../media/agave.jpg);
+  background-image: url(../media/agave_1200x800.jpg);
   background-repeat: no-repeat;
   background-position: bottom right;
+}
+
+// responsive iframe from http://stackoverflow.com/questions/12676725/responsive-iframe-google-maps-and-weird-resizing
+.iframe-rwd  {
+position: relative;
+padding-bottom: 65.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+}
+.iframe-rwd iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
 }
 
 @import "responsive.less";
