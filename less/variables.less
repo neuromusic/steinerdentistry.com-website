@@ -29,6 +29,12 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
+// Brand-ID
+// -------------------------
+@ltGreen:				#D2D9CB;
+@dkGreen:				#95A289;
+@xtraLtGreen:			lighten(@ltGreen,15%);
+
 
 // Scaffolding
 // -------------------------
@@ -38,14 +44,15 @@
 
 // Links
 // -------------------------
-@linkColor:             #08c;
+// @linkColor:             #08c;
+@linkColor:				@dkGreen;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
 // Typography
 // -------------------------
-@sansFontFamily:        "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@serifFontFamily:       Georgia, "Times New Roman", Times, serif;
+@sansFontFamily:        "Merriweather Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@serifFontFamily:       "Merriweather", Georgia, "Times New Roman", Times, serif;
 @monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace;
 
 @baseFontSize:          14px;
@@ -53,7 +60,7 @@
 @baseLineHeight:        20px;
 @altFontFamily:         @serifFontFamily;
 
-@headingsFontFamily:    "Abril Fatface", serif; // empty to use BS default, @baseFontFamily
+@headingsFontFamily:    "Marcellus SC", serif; // empty to use BS default, @baseFontFamily
 @headingsFontWeight:    bold;    // instead of browser default, bold
 @headingsColor:         inherit; // empty to use BS default, @textColor
 
@@ -162,7 +169,9 @@
 
 // Hr border color
 // -------------------------
-@hrBorder:                @grayLighter;
+// @hrBorder:                @grayLighter;
+@hrBorder:                @ltGreen;
+
 
 
 // Horizontal forms & lists
@@ -172,7 +181,8 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  #f5f5f5;
+// @wellBackground:                  #f5f5f5;
+@wellBackground:                  @ltGreen;
 
 
 // Navbar
@@ -181,7 +191,8 @@
 @navbarCollapseDesktopWidth:      @navbarCollapseWidth + 1;
 
 @navbarHeight:                    40px;
-@navbarBackgroundHighlight:       #ffffff;
+// @navbarBackgroundHighlight:       #ffffff;
+@navbarBackgroundHighlight:       @xtraLtGreen;
 @navbarBackground:                darken(@navbarBackgroundHighlight, 5%);
 @navbarBorder:                    darken(@navbarBackground, 12%);
 
@@ -223,7 +234,8 @@
 
 // Hero unit
 // -------------------------
-@heroUnitBackground:              @grayLighter;
+// @heroUnitBackground:              @grayLighter;
+@heroUnitBackground:              @ltGreen;
 @heroUnitHeadingColor:            inherit;
 @heroUnitLeadColor:               inherit;
 
