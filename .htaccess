@@ -1,6 +1,0 @@
-AddOutputFilterByType DEFLATE text/html text/plain text/xml text/javascript text/css application/javascript
-
-<FilesMatch "\.(ico|pdf|flv|jpe?g|png|gif|js|css|swf)$">
-    ExpiresActive On
-    ExpiresDefault "access plus 15 minutes"
-</FilesMatch>
