@@ -271,7 +271,10 @@
     </script>
     <script>
       $(function() {
-        $.scrollDepth();
+        $.scrollDepth({
+          elements: ['#home', '#about', '#location', '#bio', '#building'] // Track DOM elements
+          percentage: false, // Don't track depth percentage
+        });
       });
     </script>
 
